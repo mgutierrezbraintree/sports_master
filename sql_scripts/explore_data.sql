@@ -46,6 +46,7 @@ GROUP BY year, month, CLIENT_REG_CODE;  ## client purchases for each month
 SELECT *
 FROM sm_promo_sprav;
 
+## Can each promotion only be used once?
 
 
 

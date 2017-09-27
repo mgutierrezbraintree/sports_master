@@ -1,5 +1,6 @@
 CREATE INDEX receipt_id ON sm_checks (CHECK_CODE);
 ALTER TABLE sm_checks ADD INDEX (CLIENT_REG_CODE);
+ALTER TABLE sportmaster.sm_checks ADD INDEX (CHECK_LIST_CODE);
 
 SELECT * FROM sm_checks;
 SELECT * FROM sm_communication;
@@ -20,6 +21,7 @@ ALTER TABLE sm_clients ADD INDEX (PLACE_SHOP); ##
 CREATE INDEX receipt ON sm_check_discount (CHECK_CODE);  ##
 ALTER TABLE sm_check_discount ADD INDEX (DISC_ID); ##
 CREATE INDEX shop_id ON sm_shops_visitors (SHOP);
+ALTER TABLE sportmaster.sm_check_discount ADD INDEX (CHECK_LIST_CODE);
 
 
 SELECT * FROM sm_shops_visitors;
